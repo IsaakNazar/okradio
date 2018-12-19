@@ -116,7 +116,6 @@ body {
   text-align: center;
   margin: 0;
   padding: 10px;
-  //background: rgba(0,0,0,0.2);
 
   a {
     text-decoration: none;
@@ -126,9 +125,21 @@ body {
   }
 }
 // ********    PODCASTS    **********
+.alias {
+  background: grey;
+  padding: 10px 20px;
+  color: white;
+  display: inline-block;
+  background: rgba(7,19,79,0.8);
+  border-radius: 5px;
+  margin: 40px 0;
+  text-transform: uppercase;
+  img {
+    width: 11px;
+  }
+}
 .podcasts {
   display: grid;
-  //grid-template-columns: 25% 25% 25% 25%;
   grid-template-columns: auto auto auto auto;
   grid-gap: 25px;
 }
