@@ -1,11 +1,13 @@
 .container {
   margin: 0;
 }
+
 .schedule {
   max-width: 1100px;
   margin: 0 auto;
   color: white;
 }
+
 table {
   border-collapse: collapse;
 }
@@ -17,26 +19,25 @@ td {
   width: 12%;
   padding: 10px 5px;
 }
+
 tr:nth-child(odd) {
   background: #375ab1;
 }
 
 tr:nth-child(even) {
-  background:#6585cd;
+  background: #6585cd;
 }
 
-//tr td:nth-child(even) {
-//  background: #375ab1;
-//}
-//tr td:nth-child(odd) {
-//  background: #6585cd;
-//}
 .head-row td:nth-child(even) {
   background: #243d75;
 }
+
 .head-row td:nth-child(odd) {
   background: #33539a;
 }
+
 tr td:first-child {
   background: #4b6ab8;
 }
+
+/*# sourceMappingURL=style.css.map */
