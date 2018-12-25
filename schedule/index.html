@@ -8,14 +8,60 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&amp;subset=cyrillic,cyrillic-ext"
         rel="stylesheet">
+  <script
+          src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="container">
+  <div class="header_mob">
+    <div class="head_mob">
+      <div class="hamburger">
+        <div class="ham"></div>
+        <div class="ham"></div>
+        <div class="ham"></div>
+      </div>
+    </div>
+    <div class="top_mob_icons">
+      <div class="logo_mob">
+        <a href="#">
+          <img src="stuff/logo2.jpeg" alt="logo">
+        </a>
+      </div>
+      <div class="contact_us_m">
+        <div class="live_phone_text_m">
+          <p>Туз эфир номери:</p>
+          <p>Номер прямого эфира:</p>
+        </div>
+        <div class="live_phone_m">0312 123 456</div><br/>
+      </div>
+      <div class="top_icons_m">
+        <a class="top_fb_m" href="#"><i class="fab fa-facebook-square"></i></a>
+        <a class="top_wapp_m" href="#"><i class="fab fa-whatsapp"></i></a>
+        <a class="top_yt_m" href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="menu_mob">
+      <div class="lolo">
+
+        <ul class="navbar_mob">
+          <li><a href="#">Главная <span><img src="stuff/diamond-white.svg" alt=""></span> Башкы</a></li>
+          <li><a href="#">Программы <span><img src="stuff/diamond-white.svg" alt=""></span> өткөрмөлөр</a></li>
+          <li><a href="#">Расписание <span><img src="stuff/diamond-white.svg" alt=""></span> timetable</a></li>
+          <li><a href="#">Контакты <span><img src="stuff/diamond-white.svg" alt=""></span> Байланышуу</a></li>
+          <li><a href="#">О Нас <span><img src="stuff/diamond-white.svg" alt=""></span> Биз</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <div class="header">
 
     <div class="logo">
-      <img src="stuff/logo2.jpeg" alt="logo">
+      <a href="#">
+        <img src="stuff/logo2.jpeg" alt="logo">
+      </a>
     </div>
     <div class="nav-wrap">
       <div class="menu">
@@ -55,8 +101,8 @@
         </div>
       </div>
     </div>
-
   </div>
+
   <div class="content">
     <div class="alias">
       <span>Интерактивноe расписание программы Радио ОК</span>
@@ -221,5 +267,14 @@
   </div>
 
 </div>
+
+<script>
+  $(document).ready(() => {
+    $(".hamburger").click(() => {
+      $(".top_mob_icons").toggle();
+      $('.menu_mob').toggle();
+    })
+  });
+</script>
 </body>
 </html>
