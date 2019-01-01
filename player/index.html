@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://designmodo.com/demo/audioplayer/js/mediaelement-and-player.min.js"></script>
+  <title>Title</title>
+</head>
+<body>
+<div class="wrap-fixed">
+
+  <div class="container-fixed">
+    <div class="player">
+      <span class="vol">
+
+      <a class="button play" data-state="play" href="#" >
+        <i class="fa fa-play" aria-hidden="true"></i>
+      </a>
+      </span>
+      <span class="duration">0:00</span>
+      <input class="trackProgress" type="range" value="0" max="" />
+      <span class="vol">
+
+      <a class="button volume" href="#">
+        <i class="fa fa-volume-down" aria-hidden="true"></i>
+      </a>
+      </span>
+      <input class="volumeLevel" type="range" value="0.5" step="0.1" max="1" />
+    </div>
+  </div>
+</div>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hsdfwey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+<h1>Hey</h1>
+
+<script>
+  var play = $(".play"),
+    track = new Audio(
+      "http://stream.okradio.kg:8000/;listen.mp3"
+    ),
+    trackProgress = $(".trackProgress"),
+    volume = $(".volume"),
+    volumeLevel  = $(".volumeLevel"),
+    buttons = $(".button"),
+    time = new Date(null),
+    trackDurationInfo = $(".duration");
+
+  // add leading zero to the number if its less than 10
+  function pad(n) {
+    return (n < 10) ? ("0" + n) : n;
+  }
+
+  // wait until the content loads to show the play and download buttons
+  track.onloadeddata = function(){
+    trackProgress.attr("max", track.duration);
+    buttons.removeClass("hidden");
+    track.volume = volumeLevel.val();
+
+    time.setSeconds(track.duration);
+  };
+
+  // play/pause button functionality
+  play.click(function(e){
+    e.preventDefault();
+    var $this = $(this),
+      state = $this.attr("data-state");
+
+    if(state == "play"){
+      track.play();
+      $this.find("i").removeClass("fa-play").addClass("fa-pause");
+
+      $this.removeAttr("data-state");
+      $this.attr("data-state", "pause");
+    } else {
+      track.pause();
+      $this.find("i").removeClass("fa-pause").addClass("fa-play");
+
+      $this.removeAttr("data-state");
+      $this.attr("data-state", "play");
+    }
+
+    return false;
+  });
+
+
+  // move to any time in the audio clip with the slider
+  trackProgress.on("change", function(){
+    track.currentTime = $(this).val();
+    trackProgress.attr("max", track.duration);
+  });
+
+  // change the volume on with the slider
+  volumeLevel.on("change", function(){
+    var curVol = $(this).val();
+    track.volume = curVol;
+
+    if(curVol == 0){
+      volume.find("i").removeClass("fa-volume-down").removeClass("fa-volume-off").removeClass("fa-volume-up").addClass("fa-volume-off");
+    } else if(curVol > 0 && curVol <= 0.5){
+      volume.find("i").removeClass("fa-volume-down").removeClass("fa-volume-off").removeClass("fa-volume-up").addClass("fa-volume-down");
+    } else if(curVol > 0.5){
+      volume.find("i").removeClass("fa-volume-down").removeClass("fa-volume-off").removeClass("fa-volume-up").addClass("fa-volume-up");
+    }
+
+  });
+
+  // make the slider move when the audio clip is played
+  track.ontimeupdate = function(){
+    trackProgress.val(track.currentTime);
+
+    var curTime = new Date(null);
+    curTime.setSeconds(track.currentTime);
+
+    trackDurationInfo.html(curTime.getMinutes() + ":" + pad(curTime.getSeconds()));
+  }
+</script>
+</body>
+</html>

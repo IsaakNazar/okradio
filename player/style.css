@@ -1,0 +1,95 @@
+body, html {
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+
+.wrap {
+  position: fixed;
+  bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+h1 {
+  color: green;
+}
+
+.container {
+  padding: 10px;
+  background: #7b7bf7;
+  display: inline-block;
+  border-radius: 0 25px 25px 0;
+}
+
+a {
+  text-decoration: none;
+  padding-left: 5px;
+  padding-right: 3px;
+  outline: none;
+}
+a.download, a.volume {
+  padding-left: 10px;
+}
+a i {
+  color: white;
+}
+
+.vol {
+  display: inline-block;
+  width: 30px;
+}
+
+.trackProgress,
+.volumeLevel {
+  cursor: pointer;
+}
+
+.volumeLevel {
+  width: 75px;
+}
+
+.duration {
+  padding-right: 10px;
+}
+
+input[type=range] {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 8px;
+  height: 3px;
+  background-color: white;
+  position: relative;
+  bottom: 4px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #507dbd;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  background-color: #507dbd;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input[type=range]::-ms-thumb {
+  -webkit-appearance: none;
+  background-color: #507dbd;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
