@@ -1,6 +1,6 @@
 $light-blue: #009ed8;
 $darker_blue: #018ec3;
-$blue: #56a0e6;
+$blue: #26b0e6;
 $main_blue: #33539a;
 body {
   margin: 0;
@@ -25,8 +25,8 @@ body {
 }
 
 .container-fixed{
-  padding: 10px;
-  background: $main_blue;
+  padding: 20px 10px;
+  background: linear-gradient(to top, #a43737 0%, #b84c4c 100%);
   display: inline-block;
   border-radius: 0 17px 0 0;
   color: white;
@@ -77,7 +77,7 @@ body {
 
 .wrap-fixed input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
-  background-color: $blue;
+  background-color: #67c79e;
   width: 15px;
   height: 15px;
   border-radius: 10px;
@@ -103,6 +103,9 @@ body {
 }
 
 @media screen and (max-width: 450px) {
+  .container-fixed {
+    padding: 10px;
+  }
   #tuner {
     display: block;
     margin-top: 15px;
@@ -383,7 +386,7 @@ body {
 
 
 #container_button {
-  background-color: #4f4c4c;
+  background-color: #9a5457;
   width: 100px;
   height: 100px;
   margin: 0 auto;
@@ -416,11 +419,11 @@ body {
   cursor: pointer;
   top: -1.4px;
   position: relative;
-  background-image: linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
-  background-image: -o-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
-  background-image: -moz-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
-  background-image: -webkit-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
-  background-image: -ms-linear-gradient(bottom, rgb(82,79,82) 0%, rgb(134,134,134) 57%);
+  background-image: linear-gradient(bottom, #695069 0%, #d07373 57%);
+  background-image: -o-linear-gradient(bottom, #695069 0%, #d07373 57%);
+  background-image: -moz-linear-gradient(bottom, #695069 0%, #d07373 57%);
+  background-image: -webkit-linear-gradient(bottom, #695069 0%, #d07373 57%);
+  background-image: -ms-linear-gradient(bottom, #695069 0%, #d07373 57%);
   -webkit-border-radius: 50px;
   -moz-border-radius: 50px;
   border-radius: 50px;
