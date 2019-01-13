@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://designmodo.com/demo/audioplayer/js/mediaelement-and-player.min.js"></script>
+  <script src="main.js"></script>
   <link rel="stylesheet" href="style.css">
   <title>Title</title>
 </head>
@@ -94,17 +95,7 @@
           </div>
         </div>
 
-        <div class="head_btn">
-          <div id="container_button">
-            <div id="hole">
-              <div id="button">
-                <div id="triangle"></div>
-                <div id="lighter_triangle"></div>
-                <div id="darker_triangle"></div>
-              </div>
-            </div>
-          </div>
-        </div>
+
       </div>
     </div>
 
@@ -125,14 +116,6 @@
           <div class="podcast_info">
             <h2>Lorem ipsum dolor sit amet dor</h2>
             <span class="podcast_date">12/06/2018 12:00</span>
-            <!--<span class="options">-->
-              <!--<select>-->
-                <!--<option>Apples</option>-->
-                <!--<option selected>Pineapples</option>-->
-                <!--<option>Chocklate</option>-->
-                <!--<option>Pancakes</option>-->
-              <!--</select>-->
-            <!--</span>-->
             <div class="audio-container">
               <audio id="player" controls>
                 <source src="https://cdn3.sefon.me/files/prev/42/Michael%20Jackson%20-%20Who%20Is%20It%20%28128%29.mp3" type="audio/mp3">
@@ -148,11 +131,54 @@
       <div class="archive_container">
         <ul class="arc_list">
           <li>
-            <div class="arc_name">Some name: naasqwdqwfqwdqwdqme</div>
+            <div class="arc_name" data-img-src="podcast/03.jpg">Some name 01: naasqwdqwfqwdqwdqme</div>
 
-            <div class="arc_date">12/06/2018 12:00</div>
+            <div class="arc_date">22/06/2018 12:00</div>
             <div class="arc_btns">
+              <div data-music-src="https://cdn3.sefon.me/files/prev/1/Imagine%20Dragons%20-%20Whatever%20It%20Takes%20%28128%29.mp3">
+                <button>Угуу / Слушать <i class="fas fa-play"></i></button>
+              </div>
               <div>
+                <button>Скачать / Жуктоо <i class="fas fa-cloud-download-alt"></i></button>
+              </div>
+              <div id="myBtn">
+                <button>Видео <i class="fab fa-youtube"></i></button>
+              </div>
+            </div>
+            <p class="arc_text">
+Ted ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam lksdjoweij rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+            </p>
+
+            <span id="myModal" class="modal">
+              <div class="modal-content">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0">
+                </iframe>
+              </div>
+            </span>
+          </li>
+          <li>
+            <div class="arc_name" data-img-src="podcast/04.jpg">Some name 02: naasqwdqwfqwdqwdqme</div>
+
+            <div class="arc_date">15/06/2018 12:00</div>
+            <div class="arc_btns">
+              <div data-music-src="https://cdn3.sefon.me/files/prev/37/Imagine%20Dragons%20-%20Monster%20%28128%29.mp3">
+                <button>Угуу / Слушать <i class="fas fa-play"></i></button>
+              </div>
+              <div>
+                <button>Скачать / Жуктоо <i class="fas fa-cloud-download-alt"></i></button>
+              </div>
+            </div>
+            <p class="arc_text">Usu ullum aperiam commune ea. Sea rebum fuisset accusata ei, ne homero eleifend prodesset pri. Viderer posidonium voluptatibus cum ne. Vocent tincidunt scriptorem has an, tota homero in quo, cu meliore eleifend nam. Libris vocent bonorum eu vel, ad quo animal phaedrum. Ea usu illud deleniti.
+            </p>
+          </li>
+          <li>
+            <div class="arc_name" data-img-src="podcast/05.jpg">Some name: helo man hoi helo man hoi helo man hoi helo man hoi</div>
+
+            <div class="arc_date">08/06/2018 12:00</div>
+            <div class="arc_btns">
+              <div data-music-src="https://cdn1.sefon.me/files/prev/88/Moby%20-%20Lost%20Again%20%28Moby%27s%20Hands%20On%20Yello%20Remix%29%20%28128%29.mp3">
                 <button>Угуу / Слушать <i class="fas fa-play"></i></button>
               </div>
               <div>
@@ -162,52 +188,7 @@
                 <button>Видео <i class="fab fa-youtube"></i></button>
               </div>
             </div>
-            <p class="arc_text">
-
-              <a href="#">Ted ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam lksdjoweij rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</a>
-            </p>
-          </li>
-          <li>
-            <div class="arc_name">Some name: naasqwdqwfqwdqwdqme</div>
-
-            <div class="arc_date">12/06/2018 12:00</div>
-            <div class="arc_btns">
-              <div>
-                <button>Угуу / Слушать <i class="fas fa-play"></i></button>
-              </div>
-              <div>
-                <button>Скачать / Жуктоо <i class="fas fa-cloud-download-alt"></i></button>
-              </div>
-            </div>
-            <p class="arc_text">
-
-              <a href="#">Ted ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam lksdjoweij rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</a>
-            </p>
-          </li>
-          <li>
-            <div class="arc_name">Some name: helo man hoi helo man hoi helo man hoi helo man hoi</div>
-
-            <div class="arc_date">12/06/2018 12:00</div>
-            <div class="arc_btns">
-              <div>
-                <button>Угуу / Слушать <i class="fas fa-play"></i></button>
-              </div>
-              <div>
-                <button>Скачать / Жуктоо <i class="fas fa-cloud-download-alt"></i></button>
-              </div>
-              <div>
-                <button>Видео <i class="fab fa-youtube"></i></button>
-              </div>
-            </div>
-            <p class="arc_text">
-
-              <a href="#">Ted ut perspiciatis unde omnis iste natus error sit voluptatem
-                accusantium doloremque laudantium, totam lksdjoweij rem aperiam, eaque ipsa quae ab illo inventore
-                veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</a>
+            <p class="arc_text">Pro voluptua deterruisset te, duo errem quaerendum an, veniam tempor adipisci ei nam. Ne magna tation commodo vim, choro exerci melius eu sea, vix nullam noluisse in. Eos ut porro eripuit, et omittam ancillae consequuntur mel. Ocurreret inciderint nec eu, homero fierent detracto mea te. Quem civibus ex duo, laudem salutandi est ex, nam idque reprimique ei.
             </p>
           </li>
 
@@ -302,6 +283,32 @@
       if(player.playing){stopFixedPlayer()}
     }
     setInterval(isClicked, 500);
+
+    $(document).ready(() => {
+
+      $(".arc_name").click((e) => {
+        const imgSrc = e.target.dataset.imgSrc,
+          headText = e.target.innerText,
+          date = e.target.parentNode.children[1].innerText,
+          music = e.target.parentNode.children[2].children[0].dataset.musicSrc,
+          desc = e.target.parentNode.children[3].innerText;
+        // player = new Plyr('#player');
+        $(".podcast_content").children()[0].children[0].src = imgSrc;
+        $(".podcast_info").children()[0].innerText = headText;
+        $(".podcast_info").children()[1].innerText = date;
+        $(".pcast_desc").children()[0].innerText = desc;
+        player.source = {
+          type: 'audio',
+          sources: [
+            {
+              src: music,
+              type: 'audio/mp3'
+            }
+          ]
+        };
+        console.log(player.source)
+      });
+    });
   </script>
 
   <!--HAMBURGER MENU-->
