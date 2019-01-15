@@ -25,11 +25,13 @@ body {
 }
 
 .container-fixed{
-  padding: 10px;
+  text-align: center;
+  padding: 15px;
   background: linear-gradient(to top, #a43737 0%, #b84c4c 100%);
   display: inline-block;
   border-radius: 0 17px 0 0;
   color: white;
+  width: 100%;
   z-index: 5;
 }
 
@@ -100,6 +102,36 @@ body {
   height: 15px;
   border-radius: 10px;
   cursor: pointer;
+}
+.write_us {
+  font-size: 24px;
+  padding-left: 20px;
+}
+.container-msg {
+  //display: none;
+  background:  #edf0f7;
+  align-items: center;
+}
+.wrap_msg {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #d4d0cd;
+    padding-left: 5px;
+  }
+
+  input {
+    height: 25px;
+  }
+
+  label {
+    color: #696969;
+  }
 }
 
 @media screen and (max-width: 450px) {

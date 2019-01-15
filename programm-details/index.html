@@ -271,8 +271,34 @@ Ted ut perspiciatis unde omnis iste natus error sit voluptatem
             </span>
             <input class="volumeLevel" type="range" value="0.5" step="0.1" max="1"/>
           </span>
+          <span class='write_us'>
+            <i class="far fa-envelope"></i>
+          </span>
         </div>
       </div>
+      <div class='container-msg'>
+        <div class='wrap_msg'>
+
+          <form>
+            <label for='yourname'>Атыныз - Имя</label>
+            <br>
+            <input type="text" id="yourname" placeholder='Enter your name'>
+            <br>
+            <label for='yourmail'>Почта</label>
+            <br>
+            <input type="text" id="yourmail" placeholder='Enter your email'>
+            <br>
+            <span style='text-align: left'>
+            <label for='message'>Сообщение</label>
+            <br>
+            <textarea id="message" rows="10" cols="30" placeholder=''></textarea>
+          </span>
+            <br><br>
+            <input type="submit" value="Submit">
+          </form>
+        </div>
+      </div>
+
     </div>
 
   </div>
@@ -307,6 +333,10 @@ Ted ut perspiciatis unde omnis iste natus error sit voluptatem
           ]
         };
         console.log(player.source)
+      });
+
+      $(".write_us").click(() => {
+        $(".container-msg").toggle();
       });
     });
   </script>
