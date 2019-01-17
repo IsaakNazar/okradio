@@ -104,6 +104,7 @@ body {
 }
 
 .container-msg {
+  display: none;
   background: #edf0f7;
   align-items: center;
 }
@@ -115,16 +116,13 @@ body {
 }
 .wrap_msg input, .wrap_msg textarea {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   border-radius: 5px;
   border: 1px solid #d4d0cd;
   padding-left: 5px;
 }
 .wrap_msg input {
   height: 25px;
-}
-.wrap_msg label {
-  color: #696969;
 }
 
 @media screen and (max-width: 450px) {
@@ -142,7 +140,9 @@ body {
 }
 
 .menu {
-  margin-left: 150px;
+  max-width: 1150px;
+  margin: 0 auto;
+  padding-left: 230px;
 }
 
 .logo {
@@ -151,7 +151,7 @@ body {
   left: 60px;
 }
 .logo img {
-  width: 100px;
+  width: 130px;
   border-radius: 15px;
 }
 
@@ -361,6 +361,11 @@ body {
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.27);
 }
 
+@media screen and (min-width: 1366px) {
+  .logo {
+    left: 10%;
+  }
+}
 @media screen and (max-width: 1201px) {
   .logo {
     top: 40px;

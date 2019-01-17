@@ -12,6 +12,7 @@ $(document).ready(() => {
   window.onclick = function (e) {
     if (e.target === modal) {
       modal.style.display = "none";
+      $('iframe').attr('src', $('iframe').attr('src'));
     }
   };
 

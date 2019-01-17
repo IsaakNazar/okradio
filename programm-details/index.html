@@ -65,9 +65,8 @@
     <div class="header">
 
       <div class="logo">
-        <a href="#">
-          <img src="stuff/logo2.jpeg" alt="logo">
-        </a>
+        <img src="stuff/logo2.jpeg" alt="logo">
+        <div class='top-play'></div>
       </div>
       <div class="nav-wrap">
         <div class="menu">
@@ -153,7 +152,7 @@ Ted ut perspiciatis unde omnis iste natus error sit voluptatem
 
             <span id="myModal" class="modal">
               <div class="modal-content">
-                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" frameborder="0">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY" class='ytVideo' frameborder="0">
                 </iframe>
               </div>
             </span>
@@ -280,19 +279,14 @@ Ted ut perspiciatis unde omnis iste natus error sit voluptatem
         <div class='wrap_msg'>
 
           <form>
-            <label for='yourname'>Атыныз - Имя</label>
+            <input type="text" id="yourname" placeholder='атыныз / имя'>
             <br>
-            <input type="text" id="yourname" placeholder='Enter your name'>
-            <br>
-            <label for='yourmail'>Почта</label>
-            <br>
-            <input type="text" id="yourmail" placeholder='Enter your email'>
+            <input type="text" id="yourmail" placeholder='электрондук почта / электронная почта'>
             <br>
             <span style='text-align: left'>
-            <label for='message'>Сообщение</label>
-            <br>
-            <textarea id="message" rows="10" cols="30" placeholder=''></textarea>
-          </span>
+
+            <textarea id="message" rows="10" cols="30" placeholder='сообщение'></textarea>
+            </span>
             <br><br>
             <input type="submit" value="Submit">
           </form>
