@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel='stylesheet' href='style.css'>
+  <title>Contacts</title>
+</head>
+<body>
+  <div class='container'>
+
+    <div class='content'>
+      <div class="alias">
+        <span>Байланышуу</span>
+        <span><img src="stuff/diamond-white.svg" alt="diamond"></span>
+        <span>Контакты</span>
+      </div>
+      <div id='map'></div>
+    </div>
+  </div>
+  <script>
+    function initMap() {
+      // The location of Uluru
+      var uluru = {lat: 42.8636237, lng: 74.6370347};
+      // The map, centered at Uluru
+      var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 14, center: uluru});
+      // The marker, positioned at Uluru
+      var marker = new google.maps.Marker({position: uluru, map: map});
+    }
+  </script>
+  <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYM8PbEDZThiLgfv26wPIkn-qkR8agZ24&callback=initMap">
+  </script>
+</body>
+</html>
