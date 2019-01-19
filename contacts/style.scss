@@ -11,6 +11,8 @@ body {
 #map {
   height: 400px;
   width: 100%;
+  border: 1px solid #b1b1b1;
+  margin-top: 20px;
 }
 
 .alias {
@@ -24,5 +26,58 @@ body {
   text-transform: uppercase;
   img {
     width: 10px;
+  }
+}
+.contact_form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact_inputs {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #444444;
+  padding: 5px;
+}
+#submit_btn {
+  padding: 5px 15px;
+  color: white;
+  font-size: 15px;
+  background: #4b6cb4;
+  border: 1px solid #33539a;
+  border-radius: 5px;
+  outline: none;
+
+  &:hover {
+    background: #4f7eca;
+  }
+  &:active {
+    background: #33539a;
+  }
+}
+.write_alias {
+  text-align: center;
+  color:      #444444;
+}
+.fm {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.fm_wave {
+  span {
+    display: block;
+    margin: 2px;
+    font-weight: 500;
+  }
+}
+.tower {
+  margin-right: 20px;
+  img {
+    width: 60px;
   }
 }
