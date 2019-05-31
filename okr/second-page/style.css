@@ -1,0 +1,40 @@
+.content {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 0 20px;
+}
+
+.months {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+.months img {
+  width: 10px;
+}
+.months a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  padding: 15px;
+  background: grey;
+  font-size: 24px;
+  border: 1px solid white;
+}
+.months a:nth-child(even) {
+  background: #8DA8F0;
+  transition: background ease-in-out 0.15s;
+}
+.months a:nth-child(even):hover {
+  background: #bdbec1;
+}
+.months a:nth-child(odd) {
+  background: #BFD1FF;
+  transition: background ease-in-out 0.15s;
+}
+.months a:nth-child(odd):hover {
+  background: #bdbec1;
+}
+
+/*# sourceMappingURL=style.css.map */

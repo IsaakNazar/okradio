@@ -1,0 +1,53 @@
+.content {
+  margin: 0 auto;
+  max-width: 1150px;
+  padding: 0 20px;
+}
+
+.folder_grid {
+  max-width: 600px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 80px;
+}
+
+.folders {
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #cfcfcf;
+  box-shadow: 0px 0px 9px 0px #cfcfcf;
+  border-radius: 15px;
+  transition: box-shadow ease-in-out 0.15s;
+}
+.folders:hover {
+  box-shadow: 0px 0px 15px 0px #a6a6a6;
+}
+.folders:hover a {
+  color: #434343;
+}
+.folders a {
+  text-decoration: none;
+  color: #727272;
+  font-size: 30px;
+  transition: color ease-in-out 0.15s;
+}
+.folders img {
+  width: 100%;
+}
+.folders p {
+  margin: 10px;
+}
+
+@media screen and (max-width: 650px) {
+  .folder_grid {
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .folder_grid {
+    grid-template-columns: auto;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

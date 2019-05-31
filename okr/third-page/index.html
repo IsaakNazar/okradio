@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Third page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.plyr.io/3.4.7/plyr.polyfilled.js"></script>
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.4.7/plyr.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+</head>
+<body>
+  <div class="content">
+
+    <div class="podcast_frame">
+      <div class="podcast_content">
+        <div class="podcast_img">
+          <img src="05.jpg" alt="">
+        </div>
+        <div class="podcast_info">
+          <h2>Lorem ipsum dolor sit amet dor</h2>
+          <span class="podcast_date">12/06/2018 12:00</span>
+          <div class="audio-container">
+            <audio id="player" controls>
+              <source type="audio/mp3">
+            </audio>
+          </div>
+          <div class="pcast_desc">
+            <p>For one of our latest project with a local information security firm, we went with a tech theme.
+              These buttons are inspired by the computer interface seen in Star Trek with a bit of added transitionFor one of our latest project with a local information security firm, we went with a tech theme. These buttons are inspired by the computer interface seen in Star Trek with a bit of added transition effects on hover .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="archive_container">
+      <ul class="arc_list">
+        <li>
+          <div class="arc_name">Some name 01: naasqwdqwfqwdqwdqme</div>
+
+          <div class="arc_date">22/06/2018 12:05</div>
+          <div class="arc_btns">
+            <div data-music-src="https://cdn3.sefon.me/files/prev/1/Imagine%20Dragons%20-%20Whatever%20It%20Takes%20%28128%29.mp3">
+              <button class='listen'>Слушать / Listen <i class="fas fa-play"></i></button>
+            </div>
+            <div>
+              <button>
+                <a href='stuff/imagine_dragons.mp3' download>
+                  Скачать / Download <i class="fas fa-cloud-download-alt"></i>
+                </a>
+              </button>
+            </div>
+          </div>
+
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script>
+    const player = new Plyr('#player');
+  </script>
+
+</body>
+</html>
