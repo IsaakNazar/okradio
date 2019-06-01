@@ -29,6 +29,9 @@
 .podcast_info h2 {
   margin-top: 0;
 }
+.podcast_info h2 .header_en {
+  font-weight: 500;
+}
 
 .audio-container {
   width: 80%;
@@ -73,6 +76,12 @@
 }
 .arc_name:hover {
   cursor: pointer;
+}
+.arc_name .arc_name_ru {
+  font-weight: 600;
+}
+.arc_name .arc_name_en {
+  font-family: sans-serif;
 }
 
 .arc_btns button {
