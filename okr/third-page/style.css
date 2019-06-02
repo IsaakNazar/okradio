@@ -52,7 +52,7 @@
 }
 
 .arc_list {
-  -webkit-padding-start: 0;
+  padding-left: 0;
 }
 .arc_list li {
   list-style-type: none;
